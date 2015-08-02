@@ -1,0 +1,34 @@
+<div class="content-section">
+    <h1 class="left-text">Womens {{title}}</h1>
+    <div class="overlay"></div>
+    <img class="responsive-image" src="images/0w.jpg" alt="img">
+</div>
+<div class="portfolio-item-full-width product" ng-repeat="p in products">
+    <div class="productLeft">
+    <img src="{{p.image.sizes.IPhone.url}}" alt="{{p.name}}" style="width:97%;text-align:center">
+    </div>  
+
+    <div class="productRight">
+        <span class="title">{{p.name}}</span>
+        <br/>
+        <span class="price">Price {{p.priceLabel}} 
+            <span ng-show="p.salePriceLabel != null">
+                - Sales Price {{p.salePriceLabel}}
+            </span>
+
+            <span ng-show="p.salePriceRangeLabel != null">
+                <br/> Sales Price Range: {{p.salePriceRangeLabel}}
+            </span>
+        </span>
+
+        <div class="clear"> </div>
+        <a href="#" class="button button-blue" ng-click="buyProduct(p); $event.preventDefault(); $event.stopPropagation()">Details</a>
+    </div>
+</div>
+
+<div ng-show="showLoading == true" style="text-align:center">
+    <img src="images/loader.gif" style="left:40%" />
+    <br/>
+</div>
+
+<a href="#" class="button button-blue" ng-click="paginate(); $event.preventDefault(); $event.stopPropagation()" style="width:98%">View More</a>

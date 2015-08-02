@@ -1,0 +1,57 @@
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+.page-logo {
+  	width: 120px !important;
+	margin-top: 20px !important;
+	height: 30px !important;
+}
+
+.page-logo h2{
+	color: white;
+	font-family: 'Pacifico', cursive;
+	font-size: 22px !important;
+}
+
+.content-section h1 {
+    text-transform: capitalize;
+}
+
+.title {
+	text-transform: capitalize;
+}
+
+.product {
+	overflow: hidden;
+	margin-bottom: 5px;
+	border: 2px #eee solid;
+	margin-bottom: 10px;
+	width: 97%;
+	margin-left: 5px;
+}
+
+.productLeft, .productRight {
+	float: left;
+}
+
+.productLeft img {
+	width: 70px;
+	height: 140px;
+	margin-top: 20px;
+}
+
+.productLeft {
+	width: 35%;
+	margin-right: 10px;
+}
+
+.productRight {
+	width: 60%;
+}
+
+.clear {
+	clear: both;
+}
+
+.productBtn {
+	width:50%;
+	text-align:center
+}
